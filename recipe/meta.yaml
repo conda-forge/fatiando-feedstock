@@ -23,12 +23,13 @@ requirements:
     - setuptools
   run:
     - python
-    - future
     - numpy 1.9.*
     - scipy
-    - matplotlib
     - numba
+    - future
+    - matplotlib
     - pillow
+    - jupyter
     - mayavi
 
 test:
