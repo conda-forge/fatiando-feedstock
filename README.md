@@ -3,7 +3,7 @@ About fatiando
 
 Home: http://www.fatiando.org
 
-Package license: BSD 3-clause
+Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
@@ -35,7 +35,6 @@ It is possible to list all of the versions of `fatiando` available on your platf
 ```
 conda search fatiando --channel conda-forge
 ```
-
 
 
 About conda-forge

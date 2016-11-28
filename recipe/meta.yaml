@@ -1,6 +1,6 @@
 {% set name = "fatiando" %}
-{% set version = "0.4" %}
-{% set sha256 = "7709a4f7e40fd94bce8f0825d1d33094d271052374707bf2595a2cbd314401c7" %}
+{% set version = "0.5" %}
+{% set sha256 = "bcdd1d9ae1935a04f2882047eb3643f407c437ba40a4b3bbf1978120aec788b9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,27 +13,33 @@ source:
 
 build:
   number: 0
-  script: python setup.py install
+  script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py3k]
 
 requirements:
   build:
     - python
     - numpy 1.9.*
+    - setuptools
+    - toolchain
   run:
     - python
-    - future
     - numpy 1.9.*
     - scipy
-    - matplotlib
     - numba
+    - future
+    - matplotlib
     - pillow
+    - jupyter
     - mayavi
 
 test:
+  requires:
+    - pytest
   imports:
     - fatiando
-    - fatiando.gravmag._prism
+  commands:
+    - python -c "import fatiando; fatiando.test()"
 
 about:
   home: http://www.fatiando.org
