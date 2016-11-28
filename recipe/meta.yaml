@@ -42,7 +42,7 @@ test:
 
 about:
   home: http://www.fatiando.org
-  license: BSD
+  license: BSD 3-clause
   license_file: LICENSE.txt
   summary: 'Python toolkit for modeling and inversion in geophysics'
   description: |
