@@ -37,7 +37,6 @@ conda search fatiando --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
