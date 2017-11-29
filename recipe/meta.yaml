@@ -12,19 +12,19 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 2
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py3k]
 
 requirements:
   build:
     - python
-    - numpy 1.9.*
+    - numpy x.x
     - setuptools
     - toolchain
   run:
     - python
-    - numpy 1.9.*
+    - numpy x.x
     - scipy
     - numba
     - future
