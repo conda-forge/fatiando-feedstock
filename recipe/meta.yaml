@@ -18,13 +18,14 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - numpy 1.11.*
+    - numpy
     - setuptools
-    - toolchain
   run:
     - python
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - scipy
     - numba
     - future

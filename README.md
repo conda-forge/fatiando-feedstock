@@ -3,7 +3,7 @@ About fatiando
 
 Home: http://www.fatiando.org
 
-Package license: BSD
+Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
@@ -14,6 +14,20 @@ inversion in geophysics.  Our goal is provide a comprehensive and
 extensible framework for geophysical data analysis and the
 development of new methodologies.
 
+
+Current build status
+====================
+
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fatiando-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fatiando-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fatiando-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fatiando-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fatiando-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fatiando-feedstock/branch/master)
+
+Current release info
+====================
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fatiando-green.svg)](https://anaconda.org/conda-forge/fatiando) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fatiando.svg)](https://anaconda.org/conda-forge/fatiando) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fatiando.svg)](https://anaconda.org/conda-forge/fatiando) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fatiando.svg)](https://anaconda.org/conda-forge/fatiando) |
 
 Installing fatiando
 ===================
@@ -58,6 +72,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -70,18 +85,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fatiando-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fatiando-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fatiando-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fatiando-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fatiando-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fatiando-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fatiando/badges/version.svg)](https://anaconda.org/conda-forge/fatiando)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fatiando/badges/downloads.svg)](https://anaconda.org/conda-forge/fatiando)
 
 
 Updating fatiando-feedstock
