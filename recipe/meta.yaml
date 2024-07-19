@@ -12,20 +12,20 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 5
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py3k]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - numpy
     - setuptools
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy
     - numba
     - future
